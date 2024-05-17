@@ -302,7 +302,7 @@ class LoginDialog(wx.Dialog):
         try:
             #set up OAuth 2.0 credentials
             self.flow = InstalledAppFlow.from_client_secrets_file(
-                'C:\\Users\\maria\\Documents\\uni\\gettingstarted\\Python\\credentials.json',                
+                'path\\to\\credentials.json',                
                 scopes=['https://www.googleapis.com/auth/gmail.readonly', 'https://www.googleapis.com/auth/gmail.compose', 'https://www.googleapis.com/auth/gmail.send'])
             
             credentials = self.flow.run_local_server(port=0)
